@@ -338,7 +338,7 @@ export function BoardAdd() {
           onClick={handleListClick}
           size="lg"
         >
-          취소
+          취소!
         </Button>
       </HStack>
     </Box>
