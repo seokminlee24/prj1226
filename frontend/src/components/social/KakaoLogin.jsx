@@ -33,7 +33,7 @@ export function KakaoLogin() {
   }, []);
 
   const handleKakaoLogin = () => {
-    const redirectUri = "http://localhost:5173/oauth/kakao";
+    const redirectUri = "http://43.201.58.77:8080/oauth/kakao";
     const loginUrl = `https://kauth.kakao.com/oauth/authorize?client_id=${import.meta.env.VITE_KAKAO_REST_KEY}&redirect_uri=${redirectUri}&response_type=code&prompt=login&scope=profile_nickname,profile_image,account_email`;
     window.location.href = loginUrl;
   };
@@ -43,7 +43,7 @@ export function KakaoLogin() {
       <Image
         boxSize="50px"
         onClick={handleKakaoLogin}
-        src="../../../public/image/KakaoLogin.png"
+        src="/image/KakaoLogin.png"
         cursor="pointer"
       />
     </>

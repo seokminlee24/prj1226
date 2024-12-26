@@ -44,7 +44,7 @@ export function ChatView({ chatRoomId, onDelete, statusControl }) {
   //  stomp 객체 생성 및, 연결
   useEffect(() => {
     const client = new Client({
-      brokerURL: "ws://localhost:8080/wschat",
+      brokerURL: "ws://http://43.201.58.77:8080/wschat",
       connectHeaders: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
